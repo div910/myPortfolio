@@ -87,7 +87,7 @@ nav{
 }
 
 nav .container{
-    background-color: var(--brown);
+    background-color: var(--beige);
     display: flex;
     justify-content: space-between;
     align-items: center;
