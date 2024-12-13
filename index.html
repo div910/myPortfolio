@@ -1,85 +1,238 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-            Welcome to my portfolio website!
-        </title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    </head>
-    <body>
-        <main>
-            <header>
-                <nav>
-                    <div class="container">
-                        <div class="logo">
-                            <svg width="65" height="65" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
-                                <defs>
-                                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#C27B54" />
-                                    <stop offset="100%" stop-color="#8A5634" />
-                                  </linearGradient>
-                                </defs>
-                                <!-- Background -->
-                                <circle cx="100" cy="100" r="95" fill="white" stroke="url(#gradient)" stroke-width="5" />
-                                
-                                <!-- Letter D -->
-                                <path d="M60 50 Q120 50 120 100 Q120 150 60 150 Z" fill="url(#gradient)" />
-                                <circle cx="80" cy="100" r="30" fill="white" />
-                              
-                                <!-- Letter L -->
-                                <rect x="125" y="50" width="15" height="100" fill="url(#gradient)" />
-                                <rect x="125" y="135" width="35" height="15" fill="url(#gradient)" />
-                              </svg>
-                            <!-- <img src="assets/logo.png" alt=""> -->
-                        </div>
-                        <div class="links">
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">Projects</a>
-                                </li>
-                                <li>
-                                    <a href="#">Skills</a>
-                                </li>
-                                <li>
-                                    <a href="#">Achievements</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="active ">Hire Me</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <div class="header-content">
-                    <div class="container grid-2">
-                        <div class="col-1 image">
-                            <img src = "assets/d3.png" class="img-element z-index " alt="" />
-                        </div>
-                        <div class="col-2">
-                            <h1 class="header-title">Divya Lamba</h1>
-                            <p class="text">hello, i love programming</p>
-                            <a href="#" class="btn">Download CV</a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-        <!-- <div class="brucebanner">
-            <div class="bannerLeft">
-                <img src = "assets/d3.png" class="myImg1" alt="" />
-            </div>
-            <div class = "bannerRight">
-                <div class="myNameisNotKhan">Divya Lamba</div>
-            </div>
-        </div> -->
-    </main>
-    </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Web Design</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+	<link rel="icon" type="image/jpg" href="./imgs/favicon.jpg">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo-holder">
+			<div class="logo">DL</div>
+			<div class="logo-text">Portfolio Website</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#skills">Skills</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:divyalamba910@gmail.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hi I'm</small>
+						Divya Lamba
+					</h1>
+					<p>
+						<span>Product Intern @Adobe'24 | Flipkart GWC 5.0 Scholar | Mentor GDSC IGDTUW | Google Girl Hackathon'23 Semi-Finalist | CSE-AI Undergraduate | IGDTUW'25</span>
+					</p>
+					<div class="call-to-action">
+						<a href="./Resume.pdf" class="button black">
+							View Resume
+						</a>
+						<a href="mailto:divyalamba910@gmail.com" class="button white">
+							Contact Me
+						</a>
+					</div>
+					<div class="social-links">
+						<a href="https://github.com/div910">
+							<img src="./imgs/github.png" alt="GitHub" width="48" />
+						</a>
+						<a href="https://www.linkedin.com/in/divya-lamba-4642b5225/">
+							<img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<img src="./imgs/photo.png" alt="Adrian Twarog" width="100%" />
+			</div>
+		</section>
+		<section class="logos container">
+			<div class="marquee">
+				<div class="track">
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/cpp2.png" width="128" alt="C++" />
+					<img src="./imgs/react.png" width="128" alt="React" />
+					<img src="./imgs/flutter.png" width="128" alt="Flutter" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/react.png" width="128" alt="React" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+				</div>
+			</div>
+		</section>
+		<section id="skills" class="skills container">
+			<h2>
+				<small>About Me</small>
+				Skills
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>Languages</h3>
+                    <ul>
+                        <li>C++</li>
+                        <li>Python</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+                        <li>Dart</li>
+					</ul>
+					<h3>Frameworks</h3>
+					<ul>
+						<li>Bootstrap</li>
+						<li>Numpy</li>
+						<li>Pandas</li>
+						<li>NLTK</li>
+                        <li>PIL</li>
+						<li>OpenCV</li>
+						<li>Flutter</li>
+                        <li>Flask</li>
+						<li>Django</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3><br>A bit about me</h3>
+					<p>
+						Hi I'm Divya Lamba, a Computer Science and Artificial Intelligence undergraduate at IGDTUW. I love working on projects that impact people and contribute to an organization's growth. 
+					</p>
+					<p>
+						In the summer of 2024, I worked as a Product Intern at Adobe where I worked on a GenAI based project to develop microsites with multi-modal content that align with the theme of the target product’s homepage to power Adobe Marketo Engage.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="work-experience container">
+			<h2>
+				<small>Recent</small>
+				Work Experience
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-1.png" alt="Workplace 1 - Adobe Intern" width="100%" />
+							<figcaption>
+								Product Intern
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Product Intern at Adobe</h3>
+					<div>May'24 - Aug'24</div>
+					<p>Project: A GenAI based project to develop microsites with multi-modal content that align with the theme of the target product’s homepage to power Adobe Marketo Engage.</p>
+                    <p>Research Paper: The Role of Prompt Engineering in Improving Language Understanding and Generation, accepted in the International Journal For Multidisciplinary Research.</p>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/workplace-2.png" alt="Workplace 2 - Research Intern" width="60%" class="center" />
+							<figcaption>
+								Research Intern
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Research Intern at IGDTUW</h3>
+					<div>May'23 - Dec'23</div>
+					<p>Project: Utilized image feature extraction, BERT-based hashtag and caption topic modeling, and the all-MiniLM-L6-v2 transformer for caption features to predict post popularity within a vast Instagram dataset.</p>
+                    <p>Journal Paper: Multi-modal approach for Instagram posts popularity prediction (under review)</p>
+				</article>
+			</div>
+		</section>
+		<section id="projects" class="bento container">
+			<h2>
+				<small>
+					Previous
+				</small>
+				Projects
+			</h2>
+			<div class="bento-grid">
+				<a href="#" class="bento-item">
+					<img src="./imgs/portfolio.png" alt="BGCCI" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-2.jpg" alt="Churhview" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-3.jpg" alt="Harley" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-5.jpg" alt="Bunbury" width="100%" />
+				</a>
+				<a href="#" class="bento-item">
+					<img src="./imgs/bento-6.jpg" alt="Running" width="100%" />
+				</a>
+				<a href="https://div910.github.io/SchoolProject/index.html" class="bento-item">
+					<img src="./imgs/school.png" alt="School" width="100%" />
+				</a>
+			</div>
+		</section>
+		<section class="chatbot container">
+			<h2>
+				<small>
+					Talk to me
+				</small>
+				Chatbot
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<h3>Azure AI Chatbot</h3>
+					<p>I've put together a chatbot here which knows all my skills, work experience and has a copy of my CV/Resume. You can use it to ask questions about me to get a better idea of who I am and what I've done.</p>
+					<p>You can also download my resume here if you want to take a look at it.  I'm currently looking for new opportunities so if you have a project you think I'd be a good fit for, please get in touch!</p>
+					<a href="./Sample_Resume_Template.pdf" class="button black">Download Resume</a>
+				</div>
+				<div class="chat-box">
+					<div class="scroll-area">
+						<ul id="chat-log">
+							<li>
+								<span class="avatar bot">AI</span>
+								<div class="message">
+									Hi, I'm a friendly chatbot that lets you interactive with this portfolio and CV. How can I help?
+								</div>
+							</li>
+							<li>
+								<span class="avatar user">User</span>
+								<div class="message">
+									I have a question to ask you about this resume
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="chat-message">
+						<input type="text" placeholder="Hey Adrian, what skills are you best at?">
+						<button class="button black">Send</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
 </html>
