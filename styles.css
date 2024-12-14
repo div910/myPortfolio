@@ -336,7 +336,8 @@ h3 {
 }
 
 .work-experience {
-    max-height: 90vh;
+    padding-top: 30px;
+    max-height: 110vh;
 	.jobs {
         transform: scale(0.8);
         transform-origin: top; 
